@@ -23,6 +23,9 @@ Route::get('/reserve/confirm/{id}', 'App\Http\Controllers\ReserveController@conf
 // 予約完了画面へのルートを追加
 Route::get('/reserve/complete/{id}', [ReserveController::class, 'complete'])->name('reserve.complete');
 
+Route::get('/reserves', 'App\Http\Controllers\ReserveController@index')->name('reserve.index');
+
+
 
 Route::get('/', function () {
     return view('welcome');

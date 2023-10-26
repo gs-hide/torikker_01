@@ -15,4 +15,3 @@ class Reserve extends Model
         'updated_at',
      ];
 }
-

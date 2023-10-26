@@ -11,7 +11,7 @@
                 <div class="p-6 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-800">
                     <h3 class="text-lg font-bold mb-4">予約が完了しました。</h3>
 
-                    <!-- トップ画面に戻るボタン -->
+                  <!-- トップ画面に戻るボタン -->
                     <a href="{{ url('/') }}"
                         class="bg-gray-400 hover:bg-green-700 text-black font-bold py-2 px-4 rounded">トップ画面に戻る</a>
                 </div>

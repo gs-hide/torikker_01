@@ -14,8 +14,11 @@ class ReserveController extends Controller
      */
     public function index()
     {
-        // 🔽 追加
-        return response()->view('reserve.index');
+       // 予約データを取得
+    $reserves = Reserve::all();
+
+    // 取得した予約データをビューに渡す
+    return view('reserve.index', compact('reserves'));
     }
 
     /**
