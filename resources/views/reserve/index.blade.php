@@ -12,7 +12,7 @@
                     <h3 class="text-lg font-bold mb-4">予約一覧</h3>
 
                     @forelse($reserves as $reserve)
-                        <div class="mb-6 p-4 bg-beige text-black hover:text-white rounded">
+                        <div class="mb-6 p-4 bg-beige text-black rounded">
                             <p class="text-sm font-semibold mb-2">
                                 予約日: {{ $reserve->reserve_date }}
                             </p>
