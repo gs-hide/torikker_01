@@ -24,6 +24,7 @@ Route::get('/reserve/confirm/{id}', 'App\Http\Controllers\ReserveController@conf
 Route::get('/reserve/complete/{id}', [ReserveController::class, 'complete'])->name('reserve.complete');
 
 Route::get('/reserves', 'App\Http\Controllers\ReserveController@index')->name('reserve.index');
+Route::delete('/reserve/{id}', [ReserveController::class, 'destroy'])->name('reserve.destroy');
 
 
 

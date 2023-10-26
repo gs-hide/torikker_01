@@ -86,7 +86,10 @@ class ReserveController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $reserve = Reserve::findOrFail($id);
+        $reserve->delete();
+
+        return redirect()->route('reserve.index')->with('success', '予約が削除されました');
     }
     
     public function confirm($id)

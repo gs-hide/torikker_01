@@ -33,6 +33,12 @@
                                     備考: {{ $reserve->comment }}
                                 </p>
                             @endif
+                                   <!-- 削除ボタン -->
+                            <form method="POST" action="{{ route('reserve.destroy', $reserve->id) }}" class="mt-4">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="bg-red-500 text-white px-2 py-1 rounded">削除</button>
+                            </form>                           
                         </div>
                     @empty
                         <p class="text-gray-700">予約データはありません。</p>
